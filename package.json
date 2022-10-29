@@ -1,0 +1,25 @@
+{
+  "name": "benjaminharbakkcom",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "serve": "gulp watch"
+  },
+  "keywords": [
+    "portfolio",
+    "static"
+  ],
+  "author": "Benjamin Thomas Harbakk",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "browser-sync": "^2.27.10"
+  }
+}
