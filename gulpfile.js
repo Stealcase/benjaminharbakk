@@ -13,7 +13,8 @@ var bs = require("browser-sync").create();
 var sassFiles = './src/styles/scss/**/*.scss',
     cssDest = './dist/css/',
     jsFiles = 'src/js/**/*.js',
-    htmlFile = 'index.html'
+    htmlFile = 'index.html',
+    imageFiles = 'src/assets/**/*'
 
 async function stylesTask() {
     src("./src/styles/scss/all.scss")
@@ -43,6 +44,7 @@ async function watchSass() {
     });
     // Now call methods on bs instead of the
     // main browserSync module export
+    watch(imageFiles, imagesTask)
     watch(sassFiles, stylesTask)
     watch(jsFiles, javaScriptTask)
     watch(htmlFile, htmlTask)
